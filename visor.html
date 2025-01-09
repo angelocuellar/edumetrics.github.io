@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edumetrics</title>
+    <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/edumetrics.css">
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
+
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
+</head>
+
+<body>
+    <header class="fixed surface" style="box-shadow: var(--elevate1);">
+        <nav><img src="./img/dumetrics_logo.png" style="width:12vh;">
+            <!--<div class="max l">
+                <div class="field fill round prefix suffix"><i>home</i><input value="Home" readonly=""
+                        placeholder=" "><i>arrow_drop_down</i>
+                    <menu><a class="transparent"><label>Moderating</label></a><a>Mod Queue</a><a>Modmail</a><a>r/Mod</a>
+                        <hr><a class="transparent"><label>Your communities</label></a><a class="row"><i
+                                class="tiny">people</i>
+                            <div class="max">r/sveltejs</div>
+                        </a><a class="row"><i class="tiny">people</i>
+                            <div class="max">r/sveltejs</div>
+                        </a><a class="row"><i class="tiny">people</i>
+                            <div class="max">r/sveltejs</div>
+                        </a>
+                    </menu>
+                </div>
+            </div>-->
+
+            <div class="max">
+                <div class="field fill round prefix" style="visibility: hidden;">
+                    <i>search</i><input placeholder="lak">
+                </div>
+            </div>
+            <!--
+            <button class="transparent circle l">
+                <i>trending_up</i>
+                <div class="tooltip bottom">Popular</div>
+            </button>
+            <button class="transparent circle l"><i>shield</i>
+                <div class="tooltip bottom">Moderation</div>
+            </button>
+            <button class="transparent circle l m"><i>chat</i>
+                <div class="tooltip bottom">Chat</div>
+            </button>
+            <button class="transparent circle l m"><i>notifications</i>
+                <div class="tooltip bottom">Notifications</div>
+            </button>
+            <button class="transparent circle l m"><i>add</i>
+                <div class="tooltip bottom">Create Post</div>
+            </button>
+            -->
+            <!--<button class="transparent circle s m"><i>more_vert</i>
+                <menu class="no-wrap left">
+                    <a>Popular</a>
+                    <a>Moderation</a>
+                    <a>Chat</a>
+                    <a>Notifications</a>
+                    <a>Create Post</a>
+                </menu>
+            </button>-->
+
+            <!--<button class="chip l"><i>campaign</i><span>Advertise</span></button>-->
+            <img src="./img/minedu-logo.png" alt="">
+            <div class="row wave no-space small-padding l small-round" data-ui="#menu-profile"><img class="tiny"
+                    src="./img/user-edumetrics.jpg">
+                <div class="row no-space" style="margin-left:1vh;">
+                    <div class="small-text"><b>gianlozano</b>
+                        <!--<div><i class="tiny link">settings</i><span>Configuración</span></div>-->
+                    </div>
+                    <i>arrow_drop_down</i>
+                </div>
+                <menu class="no-wrap left" id="menu-profile">
+                    <!--<a class="transparent"><label>My stuff</label></a><a class="row">
+                        <div class="max">Online Status</div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span></span>
+                        </label>
+                    </a>-->
+                    <a>Mi Perfil</a>
+                    <a>Salir</a>
+                    <!--<a>User Settings</a>
+                    <hr>
+                    <a class="transparent">
+                        <label>View Options</label>
+                    </a>
+                    <a class="row">
+                        <div class="max">Mod mode</div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span></span>
+                        </label>
+                    </a>
+                    <a class="row">
+                        <div class="max">Dark Mode</div>
+                        <label class="switch">
+                            <input type="checkbox" onclick="updateTheme()"><span></span>
+                        </label>
+                    </a>-->
+                </menu>
+            </div>
+        </nav>
+    </header>
+    <!--Header Final-->
+    <!--Contenido-->
+    <main class="responsive max medium-line">
+        <div class="large-space"></div>
+        
+        <section class="responsive page left active" style="max-inline-size: 100rem !important;">
+            <article class="round no-padding page bottom active topbar">
+                <div class="visor-logo">
+                    <img src="./assets/educuna.jpg">
+                </div>
+                <div class="visor-menu-container">
+                    <div class="visor-menu">
+                        <div class="visor-menu-list">
+                            <img src="./img/icon-politicas.png" alt="">
+                            <p>Políticas</p>
+                        </div>
+            
+                        <div class="visor-menu-list-space"></div>
+                        <div class="visor-menu-list">
+                            <img src="./img/icon-fondos.png" alt="">
+                            <p>Fondos</p>
+                        </div>
+                        <div class="visor-menu-list-space"></div>
+                        <div class="visor-menu-list">
+                            <img src="./img/icon-suministros.png" alt="">
+                            <p>Suministros</p>
+                        </div>
+                        <div class="visor-menu-list-space"></div>
+                        <div class="visor-menu-list">
+                            <img src="./img/icon-produccion.png" alt="">
+                            <p>Producción</p>
+                        </div>
+                        <div class="visor-menu-list-space"></div>
+                        <div class="visor-menu-list">
+                            <img src="./img/icon-cobertura.png" alt="">
+                            <p>Cobertura</p>
+                        </div>
+                        <div class="visor-menu-list-space"></div>
+                        <div class="visor-menu-list">
+                            <img src="./img/icon-resultados.png" alt="">
+                            <p>Resultados</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        <div class="grid">
+            
+            <div class="s12 m6 l5">
+                <div class="wave round wrap">
+                    <article class="no-padding">
+                        <img class="responsive medium" src="./assets/pronied.jpg">
+                    </article>
+                </div>
+            </div>
+            <div class="s12 m6 l7">
+                <div class="wave round wrap">
+                    <article class="no-padding">
+                        <img class="responsive medium" src="./assets/pronabec.jpg">
+                    </article>
+                </div>
+            </div>
+        </div>
+
+            <!--asdasda-->
+            
+            <h5 class="">Últimas actualizaciones</h5>
+            <div class="large-space"></div>
+            <div class="large-space"></div>
+            
+            <hr>
+            
+            <div class="row large-space wrap">
+                <img src="./img/minedu-logo.png" alt="">
+                <a class="large-text">Privacidad</a><a class="large-text">Términos de servicio</a><a
+                    class="large-text">Iniciar Sesión</a><a class="large-text">Retroalimentación</a></div>
+        </section>
+
+    </main>
+    <!--Contenido Final-->
+</body>
+<script>
+    const visorMenu = document.querySelector('.visor-menu');
+
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        visorMenu.addEventListener('mousedown', (e) => {
+            isDown = true;
+            visorMenu.classList.add('active');
+            startX = e.pageX - visorMenu.offsetLeft;
+            scrollLeft = visorMenu.scrollLeft;
+        });
+
+        visorMenu.addEventListener('mouseleave', () => {
+            isDown = false;
+            visorMenu.classList.remove('active');
+        });
+
+        visorMenu.addEventListener('mouseup', () => {
+            isDown = false;
+            visorMenu.classList.remove('active');
+        });
+
+        visorMenu.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - visorMenu.offsetLeft;
+            const walk = (x - startX) * 2; // Velocidad de desplazamiento
+            visorMenu.scrollLeft = scrollLeft - walk;
+        });
+
+</script>
+</html>
